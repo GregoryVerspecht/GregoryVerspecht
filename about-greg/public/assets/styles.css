@@ -323,6 +323,14 @@ p {
   margin-right: 12px;
 }
 
+.niv-image-hero {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #353535;
+  border-radius: 100px;
+  margin-right: 12px;
+}
+
 .main {
   width: 100%;
   height: 100%;
