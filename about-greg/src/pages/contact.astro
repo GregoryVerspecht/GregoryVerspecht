@@ -1,9 +1,9 @@
 ---
-import Header from '../components/Header.astro';
-import Sidebar from '../components/Sidebar.astro';
+import Header from "../components/Header.astro";
+import Sidebar from "../components/Sidebar.astro";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <Header title="Contact | Gregory Verspecht" />
   <body>
@@ -12,7 +12,6 @@ import Sidebar from '../components/Sidebar.astro';
 
       <nav class="main">
         <div class="container">
-
           <!-- Back navigation -->
           <div class="back-nav-container">
             <a href="/" class="back-nav-button w-inline-block">
@@ -28,23 +27,81 @@ import Sidebar from '../components/Sidebar.astro';
 
           <!-- Page content -->
           <div class="content-container">
-            <h1>Contact</h1>
+<!-- FORM -->
 
-            <p class="lead">
-              Have a question, idea, or something technical worth discussing?<br />
-              Feel free to leave a message — I’ll get back to you.
-            </p>
+            <form
+              action="https://formspree.io/f/mzdvnlwq"
+              method="POST"
+              class="fs-form"
+            >
+              <header class="fs-header">
+                <h2>Get in touch</h2>
+                <p>
+                  Have a question, idea, or just want to say hi?<br />
+                  Leave a message and I’ll get back to you.
+                </p>
+              </header>
 
+              <div class="fs-field">
+                <label for="name">Name</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+
+              <div class="fs-field">
+                <label for="email">Email address</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+
+              <div class="fs-field">
+                <label>Reason for contacting</label>
+                <select name="reason" required>
+                  <option value="">Select a reason</option>
+                  <option>Job opportunity</option>
+                  <option>General question</option>
+                  <option>Technical discussion</option>
+                  <option>Collaboration / project</option>
+                  <option>Other</option>
+                </select>
+              </div>
+
+              <div class="fs-field">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Your message"></textarea>
+              </div>
+
+              <!-- Honeypot -->
+              <input type="text" name="_gotcha" hidden />
+
+              <button type="submit" class="fs-button"> Send message </button>
+            </form>
             <!-- Contact options -->
             <div class="contact-actions">
               <a
-                href="https://www.linkedin.com/in/JE-LINKEDIN-ID/"
+                href="https://www.linkedin.com/in/gregoryverspecht/"
                 target="_blank"
                 rel="noopener"
                 class="contact-link"
               >
                 <img
-                  src="/assets/linkedin.svg"
+                  src="/assets/linkedin-svgrepo-com.svg"
+                  width="25%"
+                  height="25%"
                   alt="LinkedIn"
                   class="contact-icon"
                 />
@@ -52,24 +109,7 @@ import Sidebar from '../components/Sidebar.astro';
               </a>
             </div>
 
-            <!-- Microsoft Forms embed -->
-            <div class="contact-form">
-              <iframe
-                src="https://forms.cloud.microsoft/r/jW7rDmKbus?embed=true"
-                frameborder="0"
-                marginwidth="0"
-                marginheight="0"
-                style="border:none; width:100%; height:1410px;"
-                scrolling="no"
-                allowfullscreen
-                webkitallowfullscreen
-                mozallowfullscreen
-                msallowfullscreen
-              >
-              </iframe>
-            </div>
           </div>
-
         </div>
       </nav>
     </div>

@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;400;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap');
+     
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 html {
   -ms-text-size-adjust: 100%;
@@ -740,39 +742,86 @@ p {
     --avatar-size: 140px;
   }
 
-  .contact-actions {
-  margin: 24px 0 32px;
+}
+
+/* ======================================
+   FORMSPREE CONTACT FORM (CLEAN)
+   ====================================== */
+
+.fs-form {
+  width: 100%;
+  max-width: 560px;
   display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 22px;
 }
 
-.contact-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 14px;
-  border: 1px solid #353535;
-  border-radius: 8px;
-  color: #fff;
-  text-decoration: none;
+.fs-header {
+  padding: 18px;
+  border: 1px solid #2b2b2b;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.fs-header h2 {
+  margin-bottom: 6px;
+}
+
+.fs-header p {
+  margin: 0;
+}
+
+/* fields */
+
+.fs-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.fs-field label {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+/* inputs */
+
+.fs-field input,
+.fs-field textarea,
+.fs-field select {
+  width: 100%;
+  appearance: none;
   background-color: #1c1c1c;
-  transition: background-color 0.15s ease, box-shadow 0.15s ease;
+  border: 1px solid #353535;
+  border-radius: 10px;
+  padding: 14px 16px;
+  font-size: 14px;
+  color: #ffffff;
+  font-family: inherit;
+  transition: border-color 0.12s ease, box-shadow 0.12s ease;
 }
 
-.contact-link:hover {
-  background-color: #202020;
-  box-shadow: 0 2px 4px rgba(8, 8, 8, 0.6);
+.fs-field textarea {
+  resize: vertical;
+  min-height: 120px;
 }
 
-.contact-icon {
-  width: 18px;
-  height: 18px;
-  opacity: 0.9;
+.fs-field input::placeholder,
+.fs-field textarea::placeholder {
+  color: #6f6f6f;
 }
 
-.contact-form {
-  margin-top: 24px;
+.fs-field input:focus,
+.fs-field textarea:focus,
+.fs-field select:focus {
+  outline: none;
+  border-color: #ffffff;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15);
 }
 
+/* submit */
+
+.fs-button {
+  margin-top: 8px;
+  align-self: flex-start;
 }
