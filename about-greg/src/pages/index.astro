@@ -9,32 +9,37 @@ import Sidebar from "../components/Sidebar.astro";
   <body>
     <div class="content">
       <Sidebar selectedItem="home" />
-      <nav class="main">
-        <div class="container">
-          <main class="fold-content-container">
-            <a href="/" class="w-nav-brand" aria-label="home">
-              <div class="niv-data">
-                <img
-                  src="/assets/gregory.jpg"
-                  loading="eager"
-                  alt="Profile picture"
-                  class="niv-image-hero"
-                />
-              </div>
-            </a>
+<nav class="main">
+  <div class="container">
+<main class="hero hero--stack hero--center">
+  <a href="/" class="hero__media" aria-label="home">
+    <img
+      src="/assets/gregory.jpg"
+      alt="Profile picture"
+      loading="eager"
+      class="hero__avatar"
+    />
+  </a>
 
-            <div class="fold-content">
-              <h1>Hi, I'm Greg.<br />I build things for the web.</h1>
-              <p class="lead">
-                Experienced backend developer and cloud architect. A proactive
-                team member dedicated to continuous learning, problem-solving,
-                and aiding teammates in achieving quicker outcomes.
-              </p>
-            </div>
-            <a href="mailto:sam@overview.co.il	" class="button w-button"
-              >Contact</a
-            >
-          </main>
+  <div class="hero__content">
+    <h1>Hi, I'm Gregory.<br /> </h1>
+      <h2>OT System Engineer bridging OT and IT with a focus on safety, reliability and control.</h2>
+    <p class="lead">
+      Experienced backend developer and cloud architect. A proactive team member
+      dedicated to continuous learning, problem-solving, and aiding teammates in
+      achieving quicker outcomes.
+    </p>
+  </div>
+
+  <a href="mailto:sam@overview.co.il" class="hero__cta button w-button">
+    Contact
+  </a>
+</main>
+
+  </div>
+
+
+
           <div class="projects-section">
             <!-- Software Development -->
             <a href="/software-development" class="projects-container">
