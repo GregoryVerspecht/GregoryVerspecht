@@ -22,7 +22,7 @@ const { selectedItem } = Astro.props;
         />
         <div>
           <div class="label-white">Gregory Verspecht</div>
-          <div class="label-gray">OT System engineer</div>
+          <div class="label-gray">OT System Engineer</div>
         </div>
       </div>
     </a>
@@ -87,6 +87,21 @@ const { selectedItem } = Astro.props;
         />
         <div>Personal projects</div>
       </a>
+
+            <a
+        href="/contact"
+        class={`nav-link-container w-inline-block ${
+          selectedItem === 'contact' ? 'w--current' : ''
+        }`}
+      >
+        <img
+          src="/assets/favorite.svg"
+          loading="eager"
+          alt=""
+          class="nav-link-image"
+        />
+        <div>Contact</div>
+      </a>
     </nav>
 
     <div
@@ -103,6 +118,8 @@ const { selectedItem } = Astro.props;
         class="navbar-icon"
       />
     </div>
+
+    
   </div>
 
   <script>

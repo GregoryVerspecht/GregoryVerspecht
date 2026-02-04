@@ -1,0 +1,76 @@
+---
+import Header from '../components/Header.astro';
+import Sidebar from '../components/Sidebar.astro';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <Header title="Contact | Gregory Verspecht" />
+  <body>
+    <div class="content">
+      <Sidebar selectedItem="contact" />
+
+      <nav class="main">
+        <div class="container">
+
+          <!-- Back navigation -->
+          <div class="back-nav-container">
+            <a href="/" class="back-nav-button w-inline-block">
+              <img
+                src="/assets/back.svg"
+                loading="lazy"
+                alt="Back"
+                class="back-nav-img"
+              />
+              <div>Back</div>
+            </a>
+          </div>
+
+          <!-- Page content -->
+          <div class="content-container">
+            <h1>Contact</h1>
+
+            <p class="lead">
+              Have a question, idea, or something technical worth discussing?<br />
+              Feel free to leave a message — I’ll get back to you.
+            </p>
+
+            <!-- Contact options -->
+            <div class="contact-actions">
+              <a
+                href="https://www.linkedin.com/in/JE-LINKEDIN-ID/"
+                target="_blank"
+                rel="noopener"
+                class="contact-link"
+              >
+                <img
+                  src="/assets/linkedin.svg"
+                  alt="LinkedIn"
+                  class="contact-icon"
+                />
+                Connect on LinkedIn
+              </a>
+            </div>
+
+            <!-- Microsoft Forms embed -->
+            <div class="contact-form">
+              <iframe
+                src="https://forms.cloud.microsoft/r/jW7rDmKbus?embed=true"
+                frameborder="0"
+                marginwidth="0"
+                marginheight="0"
+                style="border:none; width:100%; height:720px;"
+                allowfullscreen
+                webkitallowfullscreen
+                mozallowfullscreen
+                msallowfullscreen
+              >
+              </iframe>
+            </div>
+          </div>
+
+        </div>
+      </nav>
+    </div>
+  </body>
+</html>

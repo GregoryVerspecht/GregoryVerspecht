@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 4;
 }
 
 aside,
@@ -520,6 +520,7 @@ p {
   grid-row-gap: 32px;
   flex-direction: column;
   display: flex;
+  margin-top: 48px;
 }
 
 .tech-tools-container {
@@ -738,4 +739,40 @@ p {
   .hero {
     --avatar-size: 140px;
   }
+
+  .contact-actions {
+  margin: 24px 0 32px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border: 1px solid #353535;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #1c1c1c;
+  transition: background-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.contact-link:hover {
+  background-color: #202020;
+  box-shadow: 0 2px 4px rgba(8, 8, 8, 0.6);
+}
+
+.contact-icon {
+  width: 18px;
+  height: 18px;
+  opacity: 0.9;
+}
+
+.contact-form {
+  margin-top: 24px;
+}
+
 }
